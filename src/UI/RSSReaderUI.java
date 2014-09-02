@@ -180,7 +180,7 @@ public class RSSReaderUI extends JFrame{
 			public void valueChanged(ListSelectionEvent e) {
 				index = list.getSelectedIndex();
 				datailPane.setText("<b><a href='"+ items.get(index).getLink() +"'>"+items.get(index).getTitle()+"</a></b><br><br>" + 
-				items.get(index).getDescription());
+				items.get(index).getDescription()+"<br><br>"+items.get(index).getPubDate());
 			}
 		});	
 	}

@@ -5,6 +5,7 @@
 package model;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -18,7 +19,7 @@ public class Item {
 	private String id;
 	private String catagory;
 	/** publication date */
-	private String pDate;
+	private String pubDate;
 	private String enclosure;
 	
 	public Item() {
@@ -65,12 +66,12 @@ public class Item {
 		this.catagory = catagory;
 	}
 
-	public String getpDate() {
-		return pDate;
+	public String getPubDate() {
+		return pubDate;
 	}
 
-	public void setpDate(String pDate) {
-		this.pDate = pDate;
+	public void setPubDate(String pDate) {
+		this.pubDate = pDate;
 	}
 
 	public String getEnclosure() {
